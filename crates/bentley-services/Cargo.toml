@@ -1,0 +1,16 @@
+[package]
+name = "bentley-services"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+bentley-core = { path = "../bentley-core" }
+tokio = { workspace = true }
+reqwest = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+once_cell = { workspace = true }
+tracing = { workspace = true }
+

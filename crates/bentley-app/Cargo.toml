@@ -1,0 +1,24 @@
+[package]
+name = "bentley-app"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "bentley"
+path = "src/main.rs"
+
+[dependencies]
+bentley-core = { path = "../bentley-core" }
+bentley-views = { path = "../bentley-views" }
+bentley-services = { path = "../bentley-services" }
+bentley-utils = { path = "../bentley-utils" }
+
+wgpu = { workspace = true }
+winit = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+anyhow = { workspace = true }
+toml = { workspace = true }
+serde = { workspace = true }
+

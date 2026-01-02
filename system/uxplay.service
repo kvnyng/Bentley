@@ -1,0 +1,25 @@
+[Unit]
+Description=UxPlay AirPlay Server
+Documentation=https://github.com/FDH2/UxPlay
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/uxplay-wrapper.sh
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+# Runtime directories
+RuntimeDirectory=bentley
+RuntimeDirectoryMode=0755
+
+# User and group (adjust as needed)
+# User=bentley
+# Group=bentley
+
+[Install]
+WantedBy=default.target
+

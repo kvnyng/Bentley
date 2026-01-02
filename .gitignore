@@ -1,0 +1,32 @@
+# Rust
+target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Bentley specific
+/var/lib/bentley/
+/var/cache/bentley/
+/run/bentley/
+*.log
+
+# Configuration (may contain secrets)
+config/bentley.toml
+!config/bentley.toml.example
+
+# Build artifacts
+*.o
+*.so
+*.dylib
+

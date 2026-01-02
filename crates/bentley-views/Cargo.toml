@@ -1,0 +1,13 @@
+[package]
+name = "bentley-views"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+bentley-core = { path = "../bentley-core" }
+bentley-services = { path = "../bentley-services" }
+wgpu = { workspace = true }
+winit = { workspace = true }
+serde = { workspace = true }
+anyhow = { workspace = true }
+

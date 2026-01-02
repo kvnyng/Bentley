@@ -1,0 +1,10 @@
+[package]
+name = "bentley-utils"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+bentley-core = { path = "../bentley-core" }
+image = { workspace = true }
+anyhow = { workspace = true }
+

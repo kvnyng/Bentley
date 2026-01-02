@@ -1,0 +1,31 @@
+# Bentley Runtime Configuration Example
+# Copy this file to bentley.toml and fill in your values
+
+[display]
+fps = 60
+fullscreen = true
+
+[airplay]
+poll_interval_ms = 100
+state_file = "/run/bentley/airplay_active"
+background_fps = 10
+
+[spotify]
+poll_interval_ms = 2000
+background_poll_interval_ms = 5000
+client_id = "YOUR_SPOTIFY_CLIENT_ID"
+client_secret = "YOUR_SPOTIFY_CLIENT_SECRET"
+redirect_uri = "http://localhost:8888/callback"
+token_file = "/var/lib/bentley/spotify_token.json"
+
+[views]
+default = "now_playing"
+transition_duration = 0.5
+
+[logging]
+level = "info"
+
+[assets]
+cache_dir = "/var/cache/bentley"
+max_cache_size_mb = 500
+

@@ -1,0 +1,42 @@
+# Bentley UI Configuration
+# Defines styling and layout for views
+
+[now_playing]
+# Album art settings
+album_art_size = 512
+album_art_position = "center"  # center, left, right
+album_art_blur_radius = 20
+
+# Text settings
+font_family = "Inter"  # or path to font file
+font_size_title = 48
+font_size_artist = 32
+font_color_title = "#FFFFFF"
+font_color_artist = "#CCCCCC"
+text_position = "bottom"  # top, bottom, center
+
+# Progress bar settings
+progress_bar_height = 4
+progress_bar_color = "#1DB954"  # Spotify green
+progress_bar_background_color = "#333333"
+progress_bar_position = "bottom"
+
+# Layout
+padding = 40
+spacing = 20
+
+# Animations
+fade_in_duration = 0.3
+transition_duration = 0.5
+
+[wall_art]
+# Placeholder for future wall art view
+shader = "generative_01.wgsl"
+animation_speed = 1.0
+
+[visualizer]
+# Placeholder for future visualizer view
+fft_size = 1024
+bar_count = 64
+bar_color = "#00FF00"
+

@@ -1,0 +1,30 @@
+[Unit]
+Description=Bentley Visual Runtime
+Documentation=https://github.com/yourusername/bentley
+After=weston.service
+Requires=weston.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/bentley
+Restart=always
+RestartSec=5
+Environment=WAYLAND_DISPLAY=wayland-0
+Environment=RUST_LOG=info
+StandardOutput=journal
+StandardError=journal
+
+# Runtime directories
+RuntimeDirectory=bentley
+RuntimeDirectoryMode=0755
+
+# Working directory
+WorkingDirectory=/var/lib/bentley
+
+# User and group (adjust as needed)
+# User=bentley
+# Group=bentley
+
+[Install]
+WantedBy=default.target
+
